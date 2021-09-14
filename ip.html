@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    >
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    >
+    <title>get doxxed</title>
+    <style>
+      body {
+        background: black;
+        padding: 1em;
+        border-radius: 1em;
+      }
+      html {
+        background: url(20210912_160317.jpg);
+        background-size: 100% 100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 1ch;
+        flex-direction: row;
+        height: 100%;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    molla knows your ip, it is
+    <h3>
+      <script id="script">
+        fetch('https://ipv4.apimon.de/', {
+          cache: 'force-cache'
+        }).then(res => res.text()).then(text => script.replaceWith(new Text(text)))
+      </script>
+    </h3>
+  </body>
+
+</html>
